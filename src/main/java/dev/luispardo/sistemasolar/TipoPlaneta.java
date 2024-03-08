@@ -1,5 +1,5 @@
 package dev.luispardo.sistemasolar;
 
-public class TipoPlaneta {
-  
+public enum TipoPlaneta {
+  GASEOSO, TERRESTRE, ENANO
 }
