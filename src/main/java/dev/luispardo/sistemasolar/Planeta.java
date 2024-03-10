@@ -12,7 +12,7 @@ public class Planeta {
   private double periodoOrbital = 0; // Años
   private double periodoRotacion = 0; // Días
 
-  // Constructor
+  
   public Planeta(String nombre, int cantidadSatelites, double masa, double volumen, int diametro,
                  int distanciaMediaAlSol, TipoPlaneta tipo, boolean observableSimpleVista, double periodoOrbital, double periodoRotacion) {
       this.nombre = nombre;
@@ -27,18 +27,18 @@ public class Planeta {
       this.periodoRotacion = periodoRotacion;
   }
 
-  // Método para calcular densidad
+ 
   public double calcularDensidad() {
       return masa / volumen;
   }
 
-  // Determinar si es un planeta exterior
+  
   public boolean esExterior() {
       double distanciaEnAU = distanciaMediaAlSol / 149597870.0;
       return distanciaEnAU > 3.4;
   }
 
-  // Imprimir información del planeta
+
   public void imprimirInfo() {
       System.out.println("Nombre: " + nombre);
       System.out.println("Numero de satélites: " + cantidadSatelites);
