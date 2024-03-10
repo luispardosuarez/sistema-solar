@@ -41,7 +41,11 @@ public class Planeta {
   // Imprimir información del planeta
   public void imprimirInfo() {
       System.out.println("Nombre: " + nombre);
+      System.out.println("Numero de satélites: " + cantidadSatelites);
       System.out.println("Densidad: " + calcularDensidad() + " kg/m^3");
+      System.out.println("Diametro: " + diametro);
+      System.out.println("Tipo de planeta: " + tipo);
+      System.out.println(observableSimpleVista == true ? "Planeta observable a simple vista" : "Planeta no observable a simple vista");
       System.out.println("Es exterior: " + esExterior());
       System.out.println("Periodo Orbital: " + periodoOrbital + " años");
       System.out.println("Periodo de Rotación: " + periodoRotacion + " días");
